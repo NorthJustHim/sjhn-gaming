@@ -120,6 +120,39 @@ footer {
   </div>
 </section>
 
+<!-- TUTORIAL SECTION -->
+<section>
+  <h2>How to Use This Website</h2>
+
+  <div class="game" style="align-items:flex-start; text-align:left;">
+    <p><strong>Welcome to the SJHN Gaming Club website!</strong></p>
+
+    <ol style="padding-left:20px;">
+      <li>
+        <strong>Choose a game:</strong><br>
+        Scroll to the Games section and click the <em>Play</em> button.
+        The game opens in a new tab.
+      </li>
+
+      <li style="margin-top:10px;">
+        <strong>Follow school rules:</strong><br>
+        This site is for club use only. Respect others and listen to supervisors.
+      </li>
+
+      <li style="margin-top:10px;">
+        <strong>Report problems:</strong><br>
+        If a game is broken or a link is wrong, use the <em>Report an Issue</em>
+        section at the bottom of the page.
+      </li>
+
+      <li style="margin-top:10px;">
+        <strong>Important:</strong><br>
+        This website does not host games. All games belong to their original creators.
+      </li>
+    </ol>
+  </div>
+</section>
+
 <section>
   <h2>Games</h2>
 
@@ -182,27 +215,19 @@ footer {
   </div>
 </section>
 
-<!-- REPORT SECTION ADDED -->
 <section>
   <h2>Report an Issue</h2>
 
   <div class="game">
     <form action="https://formspree.io/f/mbdjllbd" method="POST">
-
       <label style="width:100%; text-align:left;">
         Describe the issue:
-        <textarea
-          name="message"
-          required
+        <textarea name="message" required
           placeholder="Example: A game is not loading, wrong link, broken icon, etc."
           style="width:100%; height:120px; margin-top:8px; padding:10px; border-radius:8px; border:none;">
         </textarea>
       </label>
-
-      <button type="submit" style="margin-top:15px;">
-        Send Report
-      </button>
-
+      <button type="submit" style="margin-top:15px;">Send Report</button>
     </form>
   </div>
 </section>
@@ -222,6 +247,5 @@ function openGame(url) {
 
 </body>
 </html>
-
 
 
