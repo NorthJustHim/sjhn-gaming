@@ -88,6 +88,10 @@ h2 {
   opacity: 0.85;
 }
 
+textarea {
+  font-family: Arial, sans-serif;
+}
+
 footer {
   text-align: center;
   padding: 20px;
@@ -122,68 +126,84 @@ footer {
   <div class="games">
 
     <div class="game">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Video-game-icon.png/64px-Video-game-icon.png" alt="Slope Game 2">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Video-game-icon.png/64px-Video-game-icon.png">
       <h3>Slope Game 2</h3>
-      <p>Fast-paced rolling ball challenge.</p>
       <button onclick="openGame('https://slopeonline.online/xlope-game-2')">Play</button>
     </div>
 
     <div class="game">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Minecraft_Block_Icon.png/64px-Minecraft_Block_Icon.png" alt="Infinite Craft">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Minecraft_Block_Icon.png/64px-Minecraft_Block_Icon.png">
       <h3>Infinite Craft</h3>
-      <p>Combine elements to create anything.</p>
       <button onclick="openGame('https://neal.fun/infinite-craft/')">Play</button>
     </div>
 
     <div class="game">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Subway_Surfers_logo.png/64px-Subway_Surfers_logo.png" alt="Subway Surfers">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Subway_Surfers_logo.png/64px-Subway_Surfers_logo.png">
       <h3>Subway Surfers</h3>
-      <p>Classic endless runner.</p>
       <button onclick="openGame('https://slopeonline.online/subway-surfers')">Play</button>
     </div>
 
     <div class="game">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Placeholder_acrobat_icon.png/64px-Placeholder_acrobat_icon.png" alt="Wacky Flip">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Placeholder_acrobat_icon.png/64px-Placeholder_acrobat_icon.png">
       <h3>Wacky Flip</h3>
-      <p>Perform crazy flips and land them.</p>
       <button onclick="openGame('https://slopeonline.online/wacky-flip')">Play</button>
     </div>
 
     <div class="game">
-      <img src="https://orteil.dashnet.org/cookieclicker/favicon.ico" alt="Cookie Clicker">
+      <img src="https://orteil.dashnet.org/cookieclicker/favicon.ico">
       <h3>Cookie Clicker</h3>
-      <p>Idle clicker game by Orteil.</p>
       <button onclick="openGame('https://orteil.dashnet.org/cookieclicker/')">Play</button>
     </div>
 
     <div class="game">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Tank_icon.png/64px-Tank_icon.png" alt="2v2.io">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Tank_icon.png/64px-Tank_icon.png">
       <h3>2v2.io</h3>
-      <p>Multiplayer tank battles.</p>
       <button onclick="openGame('https://2v2.io/')">Play</button>
     </div>
 
     <div class="game">
-      <img src="https://geometrydashlite.io/favicon.ico" alt="Geometry Dash">
+      <img src="https://geometrydashlite.io/favicon.ico">
       <h3>Geometry Dash</h3>
-      <p>Rhythm-based platforming.</p>
       <button onclick="openGame('https://geometrydashlite.io/')">Play</button>
     </div>
 
     <div class="game">
-      <img src="https://geometryarrow.io/favicon.ico" alt="Geometry Arrow">
+      <img src="https://geometryarrow.io/favicon.ico">
       <h3>Geometry Arrow</h3>
-      <p>Fast reaction arrow game.</p>
       <button onclick="openGame('https://geometryarrow.io/')">Play</button>
     </div>
 
     <div class="game">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Music_icon_2_%28Noun_Project%29.svg/64px-Music_icon_2_%28Noun_Project%29.svg.png" alt="Orbit Beat">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Music_icon_2_%28Noun_Project%29.svg/64px-Music_icon_2_%28Noun_Project%29.svg.png">
       <h3>Orbit Beat</h3>
-      <p>Rhythm fusion game.</p>
       <button onclick="openGame('https://crossy-road.io/orbit-beats')">Play</button>
     </div>
 
+  </div>
+</section>
+
+<!-- REPORT SECTION ADDED -->
+<section>
+  <h2>Report an Issue</h2>
+
+  <div class="game">
+    <form action="https://formspree.io/f/mbdjllbd" method="POST">
+
+      <label style="width:100%; text-align:left;">
+        Describe the issue:
+        <textarea
+          name="message"
+          required
+          placeholder="Example: A game is not loading, wrong link, broken icon, etc."
+          style="width:100%; height:120px; margin-top:8px; padding:10px; border-radius:8px; border:none;">
+        </textarea>
+      </label>
+
+      <button type="submit" style="margin-top:15px;">
+        Send Report
+      </button>
+
+    </form>
   </div>
 </section>
 
@@ -202,5 +222,6 @@ function openGame(url) {
 
 </body>
 </html>
+
 
 
