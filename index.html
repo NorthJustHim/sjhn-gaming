@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -80,6 +81,7 @@ h2 {
   height: 64px;
   margin-bottom: 10px;
   border-radius: 10px;
+  object-fit: contain;
 }
 
 .game button {
@@ -91,6 +93,10 @@ h2 {
   border-radius: 10px;
   font-weight: bold;
   cursor: pointer;
+}
+
+.game button:hover {
+  background: #0ea5e9;
 }
 
 footer {
@@ -148,57 +154,78 @@ footer {
   <div class="games">
 
     <div class="game">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Video-game-icon.png/64px-Video-game-icon.png">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Video-game-icon.png/64px-Video-game-icon.png" alt="Slope Game 2 icon">
       <h3>Slope Game 2</h3>
       <button onclick="openGame('https://slopeonline.online/xlope-game-2')">Play</button>
     </div>
 
     <div class="game">
-      <img src="https://neal.fun/favicon.ico">
+      <img src="https://neal.fun/favicon.ico" alt="Infinite Craft icon">
       <h3>Infinite Craft</h3>
       <button onclick="openGame('https://neal.fun/infinite-craft/')">Play</button>
     </div>
 
     <div class="game">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Subway_Surfers_logo.png/64px-Subway_Surfers_logo.png">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Subway_Surfers_logo.png/64px-Subway_Surfers_logo.png" alt="Subway Surfers icon">
       <h3>Subway Surfers</h3>
       <button onclick="openGame('https://slopeonline.online/subway-surfers')">Play</button>
     </div>
 
     <div class="game">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Placeholder_acrobat_icon.png/64px-Placeholder_acrobat_icon.png">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Placeholder_acrobat_icon.png/64px-Placeholder_acrobat_icon.png" alt="Wacky Flip icon">
       <h3>Wacky Flip</h3>
       <button onclick="openGame('https://slopeonline.online/wacky-flip')">Play</button>
     </div>
 
     <div class="game">
-      <img src="https://orteil.dashnet.org/cookieclicker/favicon.ico">
+      <img src="https://orteil.dashnet.org/cookieclicker/favicon.ico" alt="Cookie Clicker icon">
       <h3>Cookie Clicker</h3>
       <button onclick="openGame('https://orteil.dashnet.org/cookieclicker/')">Play</button>
     </div>
 
     <div class="game">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Tank_icon.png/64px-Tank_icon.png">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Tank_icon.png/64px-Tank_icon.png" alt="2v2.io icon">
       <h3>2v2.io</h3>
       <button onclick="openGame('https://2v2.io/')">Play</button>
     </div>
 
     <div class="game">
-      <img src="https://geometrydashlite.io/favicon.ico">
+      <img src="https://geometrydashlite.io/favicon.ico" alt="Geometry Dash icon">
       <h3>Geometry Dash</h3>
       <button onclick="openGame('https://geometrydashlite.io/')">Play</button>
     </div>
 
     <div class="game">
-      <img src="https://geometryarrow.io/favicon.ico">
+      <img src="https://geometryarrow.io/favicon.ico" alt="Geometry Arrow icon">
       <h3>Geometry Arrow</h3>
       <button onclick="openGame('https://geometryarrow.io/')">Play</button>
     </div>
 
     <div class="game">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Music_icon_2_%28Noun_Project%29.svg/64px-Music_icon_2_%28Noun_Project%29.svg.png">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Music_icon_2_%28Noun_Project%29.svg/64px-Music_icon_2_%28Noun_Project%29.svg.png" alt="Orbit Beat icon">
       <h3>Orbit Beat</h3>
       <button onclick="openGame('https://crossy-road.io/orbit-beats')">Play</button>
+    </div>
+
+    <!-- NEW GAME: Bouncy Basketball -->
+    <div class="game">
+      <img src="https://gamecomets.com/favicon.ico" alt="Bouncy Basketball icon">
+      <h3>Bouncy Basketball</h3>
+      <button onclick="openGame('https://gamecomets.com/game/bouncy-basketball/')">Play</button>
+    </div>
+
+    <!-- NEW GAME: Basket Random -->
+    <div class="game">
+      <img src="https://basketball-random.io/favicon.ico" alt="Basket Random icon">
+      <h3>Basket Random</h3>
+      <button onclick="openGame('https://basketball-random.io/')">Play</button>
+    </div>
+
+    <!-- NEW GAME: Monkeytype -->
+    <div class="game">
+      <img src="https://monkeytype.com/favicon.ico" alt="Monkeytype icon">
+      <h3>Monkeytype</h3>
+      <button onclick="openGame('https://monkeytype.com/')">Play</button>
     </div>
 
   </div>
@@ -223,7 +250,7 @@ footer {
 
 <script>
 function openGame(url) {
-  window.open(url, "_blank");
+  window.open(url, "_blank", "noopener,noreferrer");
 }
 </script>
 
